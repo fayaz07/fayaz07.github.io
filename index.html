@@ -10,95 +10,206 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    <style>
+        #load {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 9999;
+            background: url("https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif") no-repeat center center #ECF0EF
+        }
+
+    </style>
+
 </head>
 
 <body style="width: 100%;height: 100%;" onload="getData()">
-    <div class="card" style="width: 100%;height: 100%;">
-        <div class="card-body" style="padding: 0px;width: 100%;height: 100%;">
-            <div style="width: 100%;height: 100%;background-color: #a3a1ff;">
-                <div class="container text-center d-lg-flex align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center" style="padding: 15px;width: 100%;margin-right: 0px;margin-left: 0px;margin-top: 0px;padding-top: 10%;padding-bottom: auto;">
-                    <div class="col"><img class="rounded-circle align-self-center m-auto center" src="assets/img/baby-groot-guardians.0.0.jpg" style="width: 150px;margin-top: 50px;">
-                        <h3 class="text-center d-xl-flex m-auto justify-content-xl-center align-items-xl-center" style="margin-top: 8px;font-size: 32px;padding-top: 10px;padding-bottom: 5px;">Mohammad Fayaz</h3>
-                        <p class="text-center" style="margin-top: 0px;font-size: 20px;margin-bottom: 15px;color: rgb(255,255,255);">Flutter | Android</p>
-                        <p class="text-center" style="margin-top: 30px;margin-bottom: 20px;color: rgb(255,255,255);font-size: 18px;">Final year Computer Science&nbsp;undergraduate student, featured mobile application developer and open source contributor&nbsp;</p>
-                        <div class="row text-center d-md-flex justify-content-md-center">
-                            <div class="col-12 col-md-2" style="margin-bottom: 5px;"><a class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button" role="button" href="#"
-                                    style="width: 100px;">Resume</a></div>
-                            <div class="col-12 col-md-3" style="margin-bottom: 5px;"><a class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button" role="button" href="#experience"
-                                    style="width: 120px;background-color: rgb(88,86,198);">Projects</a></div>
-                            <div class="col-12 col-md-2"><a class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button" role="button" href="#"
-                                    style="width: 100px;background-color: rgb(86,198,97);">Contact</a></div>
+
+<div id="load"></div>
+
+<div id="contents" class="card" style="width: 100%;height: 100%;">
+    <div class="card-body" style="padding: 0px;width: 100%;height: 100%;">
+
+        <!-- Intro section -->
+        <div style="width: 100%;height: 100%;background-color: #a3a1ff;background-image: url(assets/img/code-coding-computer-data-574070.jpg);background-size: cover;">
+            <div class="container text-center d-lg-flex align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center"
+                 style="padding: 15px;width: 100%;margin-right: 0px;margin-left: 0px;margin-top: 0px;padding-top: 10%;padding-bottom: auto;">
+                <div class="col">
+                    <img class="rounded-circle align-self-center m-auto center"
+                         src="assets/img/baby-groot-guardians.0.0.jpg" style="width: 150px;margin-top: 50px;">
+                    <h3 class="text-center d-xl-flex m-auto justify-content-xl-center align-items-xl-center"
+                        style="margin-top: 8px;font-size: 32px;padding-top: 10px;padding-bottom: 5px;">Mohammad
+                        Fayaz</h3>
+                    <p class="text-center"
+                       style="margin-top: 0px;font-size: 20px;margin-bottom: 15px;color: rgb(255,255,255);">Flutter |
+                        Android</p>
+                    <p class="text-center"
+                       style="margin-top: 30px;margin-bottom: 20px;color: rgb(255,255,255);font-size: 20px;">Final year
+                        Computer Science&nbsp;undergraduate student, featured mobile application developer and open
+                        source contributor&nbsp;</p>
+                    <div class="row text-center d-md-flex justify-content-md-center">
+                        <div class="col-12 col-md-2" style="margin-bottom: 5px;">
+                            <button class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button"
+                                    role="button" href="#" style="width: 100px;text-transform: none;">Resume
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-3" style="margin-bottom: 5px;">
+                            <button class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button"
+                                    type="button" id="gotoprojects"
+                                    style="width: 120px;text-transform: none; background-color: rgb(88,86,198);">
+                                Projects
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button id="contactmebutton"
+                                    class="btn btn-light shadow-lg d-flex d-lg-flex justify-content-center align-items-center align-content-center align-self-center m-auto justify-content-lg-center align-items-lg-center action-button"
+                                    role="button" href="#"
+                                    style="width: 100px;background-color: rgb(86,198,97); text-transform: none;">Contact
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="experience" style="width: 100%;height: 100%;">
-                <div class="col" style="width: 100%;height: 100%;padding: 0px;">
-                    <h2 class="text-left d-flex" style="margin: 20px;">Projects &amp; Contributions</h2>
-                    <div id="projects-vue" class="row" style="width: 100%;height: auto;margin: 20px;">
-
-                        <div v-for="project in projects" class="col-lg-11 col-xl-3" style="margin-top: 5px;margin-bottom: 5px;padding-left: 5px;padding-right: 5px;width: 240px;">
-                            <div class="card border-white border rounded shadow-lg" style="width: 230px;height: 350px;margin: 0px;margin-left: 5px;">
-                                <div class="card-body" style="width: 205px;height: 350px;padding: 0px;margin: 10px;">
-                                    <img class="d-lg-flex m-auto align-items-lg-center" style="width: 205px;height: 115.31px;margin-left: 0px;padding-left: 0px;" :src="project.image">
-                                    <h4 class="card-title" style="margin-top: 5px;">{{project.project_name}}</h4>
-                                    <h6 class="text-muted card-subtitle mb-2" style="margin-top: 0px;">{{project.project_name}}</h6>
-                                    <p class="card-text" style="width: 180px;margin-top: 15px;margin-bottom: 20px;">{{project.short_description}}</p>
-                                    <div class="btn-group" role="group">
-                                        <button class="btn btn-primary" type="button" style="background-color: rgb(72,72,72);" v-on:click=goToUrl(project.github_url)>Github</button>
-                                        <button class="btn btn-primary" type="button" style="margin-left: 7px;" v-on:click=goToUrl(project.more_info)>info</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <footer id="footerpad" style="margin-top: 50px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-8 mx-auto">
-                                    <ul class="list-inline text-center">
-                                        <li class="list-inline-item"><a href="https://github.com/fayaz07"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                                        <li class="list-inline-item"><a href="https://twitter.com/fayaz7_"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/fayaz_7_/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                                    </ul>
-                                    <p class="copyright text-muted text-center">Mohammad Fayaz</p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
                 </div>
             </div>
         </div>
+
+        <!-- Projects & Contributions -->
+        <div id="experience" style="width: 100%;min-height: 100%;max-height: auto">
+            <div class="col" style="width: 100%;height: 100%;padding: 0px;">
+                <h2 class="text-left d-flex" style="margin: 20px;">Projects &amp; Contributions</h2>
+
+
+                <!-- Projects fetched from the page and shown here -->
+
+                <div id="projects-vue" class="row" style="width: 100%;height: auto;margin: 20px;">
+
+                    <div v-for="project in projects" class="col-lg-11 col-xl-3"
+                         style="margin-top: 5px;margin-bottom: 5px;padding-left: 5px;padding-right: 5px;width: 240px;">
+                        <div class="card border-white border rounded shadow-lg"
+                             style="width: 250px;height: 420px;margin: 0px;margin-left: 5px;">
+                            <div class="card-body" style="width: 230px;height: 420px;padding: 0px;margin: 10px;">
+                                <img class="d-lg-flex m-auto align-items-lg-center"
+                                     style="width: 225px;height: 126.56px;margin-left: 0px;padding-left: 0px;"
+                                     :src="project.image">
+                                <h4 class="card-title" style="margin-top: 5px;">{{project.project_name}}</h4>
+                                <p class="text-muted card-subtitle mb-2" style="margin-top: 0px; font-size: 16px;">
+                                    {{project.tags}}</p>
+                                <p class="card-text" style="width: 220px;margin-top: 10px;margin-bottom: 10px;">
+                                    {{project.short_description}}</p>
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-primary" type="button"
+                                            style="background-color: rgb(72,72,72);"
+                                            v-on:click="launchUrl(project.github_url)">Github
+                                    </button>
+                                    <button class="btn btn-primary" type="button" style="margin-left: 7px;"
+                                            v-on:click="launchUrl(project.more_info)">info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactme" class="row" style="width: 100%; height: 100%;">
+
+        </div>
+
+
+        <footer id="footerpad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-8 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><a href="https://github.com/fayaz07"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
+                                    class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/fayaz7_"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
+                                    class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/fayaz_7_/"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
+                                    class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i
+                                    class="fa fa-circle fa-stack-2x"></i><i
+                                    class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                        <p class="copyright text-muted text-center">Mohammad Fayaz</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
+</div>
 
-    <script>
-        function getData() {
-            $.get("http://mobile-app-devs.000webhostapp.com/portfolio/projects/",
-                function(data, status) {
-                    var obj = JSON.parse(data);
-                    console.log(obj.projects)
-                    new Vue({
-                        el: '#projects-vue',
-                        data: {
-                            projects: obj.projects
+
+<script>
+
+
+    /*function launchUrl() {
+        console.log('lets go to ');
+    }*/
+
+    function getData() {
+
+        $.get("projects/",
+            function (data, status) {
+                console.log(data);
+                var obj = JSON.parse(data);
+                console.log(obj.projects)
+                new Vue({
+                    el: '#projects-vue',
+                    data: {
+                        projects: obj.projects
+                    },
+                    methods: {
+                        launchUrl: function (url) {
+                            window.location = url;
                         }
-                    })
-                }
-            );
-        }
+                    }
+                })
+            }
+        );
+    }
 
-        function goToUrl(url) {
-            alert('lets go to ' + url);
+    document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility = "hidden";
+        } else if (state == 'complete') {
+            setTimeout(function () {
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility = "hidden";
+                document.getElementById('contents').style.visibility = "visible";
+            }, 1000);
         }
-    </script>
+    }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    document.getElementById("gotoprojects").onclick = function () {
+
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#experience").offset().top
+        }, 1000);
+    }
+
+    document.getElementById("contactmebutton").onclick = function () {
+
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#contactme").offset().top
+        }, 1000);
+    }
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
