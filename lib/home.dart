@@ -24,40 +24,61 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: 10.0),
+              SizedBox(height: 8.0),
               Row(
                 children: <Widget>[
+                  InkWell(
+                    onTap: (){
+                      print('tapped');
+                    },
+                    splashFactory: InkSplash.splashFactory,
+                      hoverColor: Colors.lightBlueAccent,
+                      onHover: (bool hover) {
+                        print('Hovered');
+                      },
+                      child: SizedBox(
+                        height: 50.0,
+                        child: FlutterLogo(),
+                      )),
+                ],
+              ),
+              SizedBox(height: 8.0),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  //  Intro & resume button
                   Flexible(
-                    flex: 5,
+                    flex: 4,
                     child: Align(
                       alignment: Alignment.topLeft,
-                                          child: Column(
-                        mainAxisSize: MainAxisSize.min,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
                         children: <Widget>[
+                          SizedBox(height: 50.0),
                           Align(
                             alignment: Alignment.topLeft,
-                                child: Text('Hi there!',
+                            child: Text('Hi there!',
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.bold)),
                           ),
-                           Row(
-                              children: <Widget>[
-                                Expanded(
-                                    child: Text(
-                                        'I\'m Fayaz, Mobile application developer - Flutter. Undergraduate in Computer Science',
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.w500))),
-                              ],
-                            ),
+                          Row(
+                            children: <Widget>[
+                              Expanded(
+                                  child: Text(
+                                      'I\'m Fayaz, Mobile application developer - Flutter. Undergraduate in Computer Science',
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.w500))),
+                            ],
+                          ),
                         ],
                       ),
                     ),
                   ),
-                  Flexible(flex: 5, child: Image.asset('assets/440.jpg')),
+                  Flexible(flex: 6, child: Image.asset('assets/440.jpg')),
                 ],
               )
             ],
