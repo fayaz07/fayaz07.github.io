@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Projects.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
-import { socialMediaLinks, openSource } from "../../portfolio";
+import { socialMediaLinks, projects } from "../../portfolio";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
-import { projects } from "../../portfolio.js";
 
 export default function Projects() {
   const [repo, setrepo] = useState([]);

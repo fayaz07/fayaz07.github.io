@@ -80,19 +80,23 @@ export default function GithubRepoCard({ repo }) {
                 <p>{repo.stargazers}</p>
                 {repo.playstore_url != null && (
                   <div style={{ paddingLeft: "16px" }}>
-                    <a href={repo.playstore_url} target="_blank">
-                      <img src={playstore} height="20" />
+                    <a
+                      href={repo.playstore_url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img src={playstore} height="20" alt="playstore" />
                     </a>
                   </div>
                 )}
                 {repo.mobile_app && (
                   <div style={{ paddingLeft: "16px" }}>
-                    <img src={phone} height="20" />
+                    <img src={phone} height="20" alt="phone" />
                   </div>
                 )}
                 {repo.rest_api && (
                   <div style={{ paddingLeft: "16px" }}>
-                    <img src={server} height="20" />
+                    <img src={server} height="20" alt="server" />
                   </div>
                 )}
               </span>
