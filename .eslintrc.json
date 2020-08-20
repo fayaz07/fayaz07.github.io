@@ -2,7 +2,7 @@
   "extends": ["eslint:recommended", "prettier", "prettier/react"],
   "plugins": [],
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": 2019,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
