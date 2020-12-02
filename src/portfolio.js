@@ -5,13 +5,13 @@ const greeting = {
   title: emoji("I'm Mohammad Fayaz"),
 
   subTitle: emoji(
-    "I Figure out things, learn new tech and I can read errors correctly. I enjoy getting wired in! 💸"
+    "I Figure out things, learn new tech and I can read errors correctly."
   ),
   experience: emoji(
     "A Software Developer 🚀 having an experience of building Mobile 📱 applications and Backend api's."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1mNZ4w8k71aIYNnozgyT5yl74aBqGqWhZ/view?usp=sharing",
+    "https://drive.google.com/file/d/1o0K36r6Mh5SAqxOUzVFrofa3gYax2_kG/view?usp=sharing",
 };
 
 // Your Social Media Link
