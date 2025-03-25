@@ -30,6 +30,7 @@ jobs:
           mkdir -p out
           cp -r .next/static out/_next/static
           cp -r public out
+          touch ./out/.nojekyll
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v4
