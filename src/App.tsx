@@ -1,13 +1,15 @@
 import React from "react";
-import "./App.css";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import dev from "./assets/dev.png";
 import twitter from "./assets/twitter.png";
+import "./App.css";
+import PalestineBanner from "./banners/Palestine";
 
 function App() {
   return (
     <div className="App col center">
+      <PalestineBanner />
       <img src={dev} className="dev-image" alt="dev" />
       <p className="greet">Hi there,</p>
       <p>
