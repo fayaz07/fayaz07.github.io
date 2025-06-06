@@ -1,0 +1,202 @@
+[
+  {
+    "category": "Juices",
+    "items": [
+      { "item": "Falooda", "price": 60, "available": true, "image": "" },
+      { "item": "Spl. Falooda", "price": 100, "available": true, "image": "" },
+      { "item": "Badam Shake", "price": 50, "available": true, "image": "" },
+      {
+        "item": "Spl. Badam Shake",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "American Nuts Ice Cream",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Gulkand Ice Cream",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chocolate Ice Cream",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      { "item": "Lassi", "price": 30, "available": true, "image": "" },
+      { "item": "Spl Lassi", "price": 50, "available": true, "image": "" },
+      {
+        "item": "Chocolate Lassi",
+        "price": 50,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Strawberry Lassi",
+        "price": 50,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Mix Fruit Lassi",
+        "price": 50,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Blue Berry Lassi",
+        "price": 50,
+        "available": true,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "category": "Moctail Mojito",
+    "items": [
+      { "item": "Blueberry", "price": 50, "available": true, "image": "" },
+      { "item": "Blue Curacao", "price": 50, "available": true, "image": "" },
+      { "item": "Lime & Mint", "price": 50, "available": true, "image": "" },
+      { "item": "Mix Fruit", "price": 50, "available": true, "image": "" },
+      { "item": "Orange", "price": 50, "available": true, "image": "" },
+      { "item": "Kala Khatta", "price": 50, "available": true, "image": "" },
+      { "item": "Pina Colada", "price": 50, "available": true, "image": "" }
+    ]
+  },
+  {
+    "category": "Teas",
+    "items": [
+      { "item": "Tea", "price": 10, "available": true, "image": "" },
+      { "item": "Black Tea", "price": 10, "available": true, "image": "" },
+      { "item": "Green Tea", "price": 15, "available": true, "image": "" },
+      { "item": "Ginger Tea", "price": 15, "available": true, "image": "" },
+      { "item": "Honey Tea", "price": 15, "available": true, "image": "" },
+      { "item": "Lemon Tea", "price": 15, "available": true, "image": "" }
+    ]
+  },
+  {
+    "category": "Coffee",
+    "items": [
+      { "item": "Coffee", "price": 20, "available": true, "image": "" },
+      { "item": "Boost", "price": 20, "available": true, "image": "" },
+      { "item": "Horliks", "price": 20, "available": true, "image": "" }
+    ]
+  },
+  {
+    "category": "Non-Veg Snacks",
+    "items": [
+      { "item": "Bread Omelette", "price": 30, "available": true, "image": "" },
+      {
+        "item": "Butter Bread Omelette",
+        "price": 40,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Butter Omelette Parata",
+        "price": 50,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Nuggets",
+        "price": 100,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Fingers (7 Piece)",
+        "price": 150,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Fries (9 Piece)",
+        "price": 80,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Burger Patty (2 Piece)",
+        "price": 70,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Popcorn (12 Piece)",
+        "price": 80,
+        "available": true,
+        "image": ""
+      },
+      { "item": "Chicken Roll", "price": 50, "available": true, "image": "" },
+      {
+        "item": "Chicken Wings (2 Piece)",
+        "price": 70,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Strips (2 Piece)",
+        "price": 80,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Chicken Cheese Ball (9 Piece)",
+        "price": 150,
+        "available": true,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "category": "Veg Snacks",
+    "items": [
+      { "item": "Veg. Roll", "price": 30, "available": true, "image": "" },
+      { "item": "Paneer Roll", "price": 35, "available": true, "image": "" },
+      {
+        "item": "Alu Tikki (7 Piece)",
+        "price": 80,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Smiley (7 Piece)",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      { "item": "French Fries", "price": 60, "available": true, "image": "" },
+      {
+        "item": "Veggie Fingers (9 Piece)",
+        "price": 100,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Veggie Nuggets (10 Piece)",
+        "price": 60,
+        "available": true,
+        "image": ""
+      },
+      {
+        "item": "Veg. Cheese Ball (10 Piece)",
+        "price": 100,
+        "available": true,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "category": "Extras",
+    "items": [
+      { "item": "Mayonnaise", "price": 20, "available": true, "image": "" }
+    ]
+  }
+]
