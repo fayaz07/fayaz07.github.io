@@ -40,11 +40,11 @@ function Header() {
             alt="logo"
             className="h-48 w-48 object-cover shadow-2xl"
           />
-          <p className="text-6xl font-bold text-white playfair mt-4 drop-shadow-[0px_4px_39px_#C6A87D]">
+          <p className="text-5xl md:text-6xl font-bold text-white playfair mt-4 drop-shadow-[0px_4px_39px_#C6A87D] text-center">
             Cafe Loaded
           </p>
           <hr className="border-2 border-[#C6A87D] w-1/2 mt-4" />
-          <p className="text-2xl font-bold text-white playfair mt-4 drop-shadow-[0px_4px_39px_#C6A87D]">
+          <p className="text-2xl font-bold text-white playfair mt-4 drop-shadow-[0px_4px_39px_#C6A87D] text-center">
             Bhainsa, Nirmal, Telangana, India
           </p>
         </div>
@@ -59,11 +59,11 @@ function CategoryAndItems(props: {
 }) {
   const { category, items } = props;
   return (
-    <div className="mt-4 mb-4">
+    <div className="mt-4 mb-4 w-full md:w-auto">
       <p className="text-center text-[#C6A87D] text-4xl playfair font-extrabold mt-2 mb-2">
         {category}
       </p>
-      <table className="ms-auto me-auto border-separate border-spacing-x-16 border-spacing-y-4">
+      <table className="ms-auto me-auto border-separate border-spacing-x-8 border-spacing-y-4">
         <tbody>
           {items.map((item) => {
             return (
@@ -85,7 +85,7 @@ function CategoryAndItems(props: {
 
 function Menu() {
   return (
-    <div className="flex flex-row flex-wrap col-auto max-w-[100%] ps-2 pe-2 xl:ps-12 xl:pe-12 pt-12 pb-64">
+    <div className="flex md:flex-row md:flex-wrap gap-4 col-auto max-w-[100%] sm:ps-2 sm:pe-2 md:ps-6 md:pe-6 pt-12 pb-64 items-start justify-center flex-col">
       {data.map((e) => {
         return (
           <CategoryAndItems
@@ -101,7 +101,7 @@ function Menu() {
 
 export default function CafeLoaded() {
   return (
-    <div className="w-full h-full bg-[#313030] flex flex-col">
+    <div className="w-full h-full bg-[#313030] flex flex-col max-w-[100vw]">
       <Header />
       <Menu />
     </div>
